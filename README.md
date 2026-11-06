@@ -1,4 +1,4 @@
-# Pog101_Assignment_Unisa_Sesay_905006635
+ok# Pog101_Assignment_Unisa_Sesay_905006635
 Farm Wise SL:Crop Price and planting Advisor
 
 1 Problem Description
@@ -62,5 +62,10 @@ PROCEDURE
 33. IF oldPrice IS FOUND AND changePct <= -PRICE_DROP_ALERT_PCT THEN
 34.     CALL sendDropAlerts(cropName, market, newPrice, oldPrice)
 35. END IF
+
+
+
+
+
 
 
