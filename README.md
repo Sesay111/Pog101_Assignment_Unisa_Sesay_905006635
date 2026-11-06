@@ -66,7 +66,8 @@ PROCEDURE
 
 
 FLOWCHART 
-
+<img width="810" height="1080" alt="IMG-20261106-WA0001" src="https://github.com/user-attachments/assets/b2385076-e82b-416d-a138-c31350233806" />
+<img width="810" height="1080" alt="IMG-20261106-WA0002" src="https://github.com/user-attachments/assets/ac837026-0773-4107-916a-1117da1a3c2f" />
 
 
 
