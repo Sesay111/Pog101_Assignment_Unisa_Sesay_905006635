@@ -63,6 +63,11 @@ PROCEDURE
 34.     CALL sendDropAlerts(cropName, market, newPrice, oldPrice)
 35. END IF
 
+FLOWCHART
+
+<img width="810" height="1080" alt="IMG-20261106-WA0001" src="https://github.com/user-attachments/assets/b8d40d85-de94-4250-898f-b8e9d05678b2" />
+<img width="810" height="1080" alt="IMG-20261106-WA0002" src="https://github.com/user-attachments/assets/fe087494-b67a-4be5-96d5-c80711e99550" />
+
 
 
 
