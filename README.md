@@ -27,48 +27,14 @@ FarmWise SL is a menu-driven advisory system that a farmer reaches by a short ph
 
 PROCEDURE 
 
- PROCEDURE updatePrice()
 
- 1. SET loginTries = 0
- 2. SET loggedIn = FALSE
- 3. WHILE loggedIn = FALSE AND loginTries < MAX_LOGIN_TRIES DO
- 4.     INPUT agentId, agentPin
- 5.     SET loggedIn = isAgentValid(agentId, agentPin)
- 6.     IF loggedIn = FALSE THEN
- 7.         SET loginTries = loginTries + 1
- 8.         OUTPUT "Wrong ID or PIN."
- 9.     END IF
-10. END WHILE
 
-11. IF loggedIn = FALSE THEN
-12.     OUTPUT "Too many failed attempts. Account locked."
-13.     STOP
-14. END IF
+<img width="1080" height="499" alt="IMG-20261106-WA0039" src="https://github.com/user-attachments/assets/b58d7035-f8bb-4973-9841-d9e21608c6c7" />
+<img width="1080" height="499" alt="IMG-20261106-WA0041" src="https://github.com/user-attachments/assets/d5f8e23f-5ebe-4e8f-80c9-879296a0bdce" />
+<img width="1080" height="499" alt="IMG-20261106-WA0040" src="https://github.com/user-attachments/assets/b8313a77-2f76-470c-a739-428d767aa0e0" />
 
-15. SET market = readMarket()              // must be a known market
-16. SET cropName = readCrop()              // must be a supported crop
-17. SET newPrice = readPrice()             // validated number in range
-18. SET oldPrice = getLatestPrice(cropName, market)
 
-19. IF oldPrice IS FOUND THEN
-20.     SET changePct = percentChange(oldPrice, newPrice)
-21.     IF absoluteValue(changePct) > MAX_PRICE_JUMP THEN
-22.         OUTPUT "Large change of " + changePct + " percent. Confirm? (Yes/No)"
-23.         INPUT confirmed
-24.         IF confirmed = "No" THEN
-25.             OUTPUT "Update cancelled."
-26.             STOP
-27.         END IF
-28.     END IF
-29. END IF
 
-30. CALL savePrice(cropName, market, newPrice, today())
-31. CALL logUpdate(agentId, cropName, market, newPrice, now())
-32. OUTPUT "Price saved: " + cropName + ", " + market + ", SLE " + newPrice
-
-33. IF oldPrice IS FOUND AND changePct <= -PRICE_DROP_ALERT_PCT THEN
-34.     CALL sendDropAlerts(cropName, market, newPrice, oldPrice)
-35. END IF
 
 END PROCEDURE
 
