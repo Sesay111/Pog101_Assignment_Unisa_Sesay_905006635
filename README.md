@@ -62,6 +62,12 @@ PROCEDURE
 33. IF oldPrice IS FOUND AND changePct <= -PRICE_DROP_ALERT_PCT THEN
 34.     CALL sendDropAlerts(cropName, market, newPrice, oldPrice)
 35. END IF
+    
+
+FLOWCHART
+
+<img width="810" height="1080" alt="IMG-20261106-WA0001" src="https://github.com/user-attachments/assets/7107b751-68e0-4cdf-aa42-32128e96a8eb" />
+<img width="810" height="1080" alt="IMG-20261106-WA0002" src="https://github.com/user-attachments/assets/a2a1d1bf-81f5-471e-a751-9f888f1adb3c" />
 
 
 
