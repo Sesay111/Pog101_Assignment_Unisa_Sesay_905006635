@@ -20,3 +20,7 @@ Agriculture is one of the most important sectors in Sierra Leone and supports th
 •Beneficiaries: smallholder farmers, farmer cooperatives, rural households, extension officers and local markets.
 
 Long-term sustainability: the logic is simple and modular, the data can be updated by trained community data agents and cooperatives, and the system can be maintained by local developers because it is open source (see Sections 1.7 and 1.8).
+
+4 Proposed Solution
+
+FarmWise SL is a menu-driven advisory system that a farmer reaches by a short phone menu. After a one-time registration (phone number and district), the farmer can: (1) check the latest price of a crop in their district, (2) get planting advice for a crop in the current month, (3) estimate expected income from a given farm size, and (4) find the market that currently pays the best price. The system checks every input, warns when price data is old, and alerts the farmer when a price drops sharply. This assignment covers the logical design only: algorithm, pseudocode, flowcharts, modules and expected outputs. No source code is written.
