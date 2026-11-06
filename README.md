@@ -25,7 +25,7 @@ Long-term sustainability: the logic is simple and modular, the data can be updat
 
 FarmWise SL is a menu-driven advisory system that a farmer reaches by a short phone menu. After a one-time registration (phone number and district), the farmer can: (1) check the latest price of a crop in their district, (2) get planting advice for a crop in the current month, (3) estimate expected income from a given farm size, and (4) find the market that currently pays the best price. The system checks every input, warns when price data is old, and alerts the farmer when a price drops sharply. This assignment covers the logical design only: algorithm, pseudocode, flowcharts, modules and expected outputs. No source code is written.
 
-PROCEDURE 
+5 PROCEDURE 
 
 <img width="1080" height="499" alt="IMG-20261106-WA0039" src="https://github.com/user-attachments/assets/8693740e-e644-4e99-a6db-58373e9e6f1c" />
 <img width="1080" height="499" alt="IMG-20261106-WA0041" src="https://github.com/user-attachments/assets/a6fca8ed-c6a4-48e1-9bf6-22b876ee132c" />
@@ -33,11 +33,11 @@ PROCEDURE
 
     
 
-FLOWCHART
+6 FLOWCHART
 
 <img width="810" height="1080" alt="IMG-20261106-WA0001" src="https://github.com/user-attachments/assets/7107b751-68e0-4cdf-aa42-32128e96a8eb" />
 <img width="810" height="1080" alt="IMG-20261106-WA0002" src="https://github.com/user-attachments/assets/a2a1d1bf-81f5-471e-a751-9f888f1adb3c" />
 
-
-
+7 AUTHOR
+UNISA SESAY 905006635
 
