@@ -63,6 +63,9 @@ PROCEDURE
 34.     CALL sendDropAlerts(cropName, market, newPrice, oldPrice)
 35. END IF
 
+FLOWCHART 
+
+
 
 
 
