@@ -25,7 +25,7 @@ Long-term sustainability: the logic is simple and modular, the data can be updat
 
 FarmWise SL is a menu-driven advisory system that a farmer reaches by a short phone menu. After a one-time registration (phone number and district), the farmer can: (1) check the latest price of a crop in their district, (2) get planting advice for a crop in the current month, (3) estimate expected income from a given farm size, and (4) find the market that currently pays the best price. The system checks every input, warns when price data is old, and alerts the farmer when a price drops sharply. This assignment covers the logical design only: algorithm, pseudocode, flowcharts, modules and expected outputs. No source code is written.
 
-PROCEDURE updatePrice()
+PROCEDURE 
 
  1. SET loginTries = 0
  2. SET loggedIn = FALSE
@@ -37,17 +37,14 @@ PROCEDURE updatePrice()
  8.         OUTPUT "Wrong ID or PIN."
  9.     END IF
 10. END WHILE
-
 11. IF loggedIn = FALSE THEN
 12.     OUTPUT "Too many failed attempts. Account locked."
 13.     STOP
 14. END IF
-
 15. SET market = readMarket()              // must be a known market
 16. SET cropName = readCrop()              // must be a supported crop
 17. SET newPrice = readPrice()             // validated number in range
 18. SET oldPrice = getLatestPrice(cropName, market)
-
 19. IF oldPrice IS FOUND THEN
 20.     SET changePct = percentChange(oldPrice, newPrice)
 21.     IF absoluteValue(changePct) > MAX_PRICE_JUMP THEN
@@ -59,11 +56,9 @@ PROCEDURE updatePrice()
 27.         END IF
 28.     END IF
 29. END IF
-
 30. CALL savePrice(cropName, market, newPrice, today())
 31. CALL logUpdate(agentId, cropName, market, newPrice, now())
 32. OUTPUT "Price saved: " + cropName + ", " + market + ", SLE " + newPrice
-
 33. IF oldPrice IS FOUND AND changePct <= -PRICE_DROP_ALERT_PCT THEN
 34.     CALL sendDropAlerts(cropName, market, newPrice, oldPrice)
 35. END IF
