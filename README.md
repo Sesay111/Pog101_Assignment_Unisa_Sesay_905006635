@@ -10,3 +10,13 @@ Why the problem exists: (a) there is no simple, central place where farmers can 
 2 Background
 
 Agriculture is one of the most important sectors in Sierra Leone and supports the livelihoods of a large share of the population, with rice as the main staple food. The country has a clear rainy season (roughly May to October) and a dry season (roughly November to April), so the timing of planting strongly affects yields. Information is available from bodies such as the Ministry of Agriculture and Food Security and from market surveys, but it rarely reaches farmers quickly or in a form they can use. Mobile phones are widespread, and text-based services such as SMS and USSD work on basic handsets without internet data. This makes a phone-based advisory service realistic for the Sierra Leone context.
+
+3 Community Impact
+
+•Problem being solved: lack of timely market price information and planting guidance for smallholder farmers.
+
+•Expected impact: farmers can compare prices before selling, plan their planting dates, and estimate income before they commit seed and labour. This can reduce post-harvest losses, improve bargaining power and increase household income.
+
+•Beneficiaries: smallholder farmers, farmer cooperatives, rural households, extension officers and local markets.
+
+Long-term sustainability: the logic is simple and modular, the data can be updated by trained community data agents and cooperatives, and the system can be maintained by local developers because it is open source (see Sections 1.7 and 1.8).
