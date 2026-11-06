@@ -1,5 +1,6 @@
 # Pog101_Assignment_Unisa_Sesay_905006635
 Farm Wise SL:Crop Price and planting Advisor
+
 1 Problem Description
 Smallholder farmers in Sierra Leone often sell their crops without knowing what the crop is worth in nearby markets, and they often plant without clear, timely advice on the best planting window. Prices for rice, cassava, groundnut, maize and vegetables change by district and by week, but this information is usually passed by word of mouth. As a result, a farmer may accept a low price from a trader at the farm gate, or may plant too early or too late for the rains.
 Who is affected: smallholder farmers (including many women farmers), rural households that depend on farming income, and local traders and extension officers who work without a shared, up-to-date source of information.
