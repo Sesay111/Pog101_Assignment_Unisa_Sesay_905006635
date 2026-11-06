@@ -27,41 +27,10 @@ FarmWise SL is a menu-driven advisory system that a farmer reaches by a short ph
 
 PROCEDURE 
 
- 1. SET loginTries = 0
- 2. SET loggedIn = FALSE
- 3. WHILE loggedIn = FALSE AND loginTries < MAX_LOGIN_TRIES DO
- 4.     INPUT agentId, agentPin
- 5.     SET loggedIn = isAgentValid(agentId, agentPin)
- 6.     IF loggedIn = FALSE THEN
- 7.         SET loginTries = loginTries + 1
- 8.         OUTPUT "Wrong ID or PIN."
- 9.     END IF
-10. END WHILE
-11. IF loggedIn = FALSE THEN
-12.     OUTPUT "Too many failed attempts. Account locked."
-13.     STOP
-14. END IF
-15. SET market = readMarket()              // must be a known market
-16. SET cropName = readCrop()              // must be a supported crop
-17. SET newPrice = readPrice()             // validated number in range
-18. SET oldPrice = getLatestPrice(cropName, market)
-19. IF oldPrice IS FOUND THEN
-20.     SET changePct = percentChange(oldPrice, newPrice)
-21.     IF absoluteValue(changePct) > MAX_PRICE_JUMP THEN
-22.         OUTPUT "Large change of " + changePct + " percent. Confirm? (Yes/No)"
-23.         INPUT confirmed
-24.         IF confirmed = "No" THEN
-25.             OUTPUT "Update cancelled."
-26.             STOP
-27.         END IF
-28.     END IF
-29. END IF
-30. CALL savePrice(cropName, market, newPrice, today())
-31. CALL logUpdate(agentId, cropName, market, newPrice, now())
-32. OUTPUT "Price saved: " + cropName + ", " + market + ", SLE " + newPrice
-33. IF oldPrice IS FOUND AND changePct <= -PRICE_DROP_ALERT_PCT THEN
-34.     CALL sendDropAlerts(cropName, market, newPrice, oldPrice)
-35. END IF
+<img width="1080" height="499" alt="IMG-20261106-WA0039" src="https://github.com/user-attachments/assets/8693740e-e644-4e99-a6db-58373e9e6f1c" />
+<img width="1080" height="499" alt="IMG-20261106-WA0041" src="https://github.com/user-attachments/assets/a6fca8ed-c6a4-48e1-9bf6-22b876ee132c" />
+<img width="1080" height="499" alt="IMG-20261106-WA0040" src="https://github.com/user-attachments/assets/92063046-3870-4dc7-98b7-a7e06d6b69c1" />
+
     
 
 FLOWCHART
